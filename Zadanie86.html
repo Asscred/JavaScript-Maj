@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <head>
 <script language="JavaScript">
 function Przycisk1_dziuba(){
@@ -27,6 +27,18 @@ pokaz3.innerHTML="<br>Aktualny czas: "+dzis.getHours()+":"+dzis.getMinutes();
 <tr id="pokaz1"></tr><br>
 <tr id="pokaz2"></tr><br>
 <tr id="pokaz3"></tr><br>
+
+<center>
+Ostatnio zmodyfikowany
+<script language="LiveScript">
+document.write(document.lastModified,"<br>")
+</script>
+
+<script language="JavaScript">
+dzis = new Date()
+document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+document.write("<br>Aktualna data : ",dzis.getMonth()+1,";",dzis.getDate(),";",dzis.getFullYear());
+</script>
 </table>
 </body>
 </html>
